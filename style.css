@@ -1,0 +1,72 @@
+body {
+  background-image: url(./img/fundo.jpeg);
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+.container {
+  align-items: center;
+  color: white;
+  font-size: 30px;
+}
+.container img {
+  width: 500px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 0 20px blue;
+  transition: transform 0.3s ease;
+}
+
+.menu {
+  display: block;
+  text-align: center;
+  background: #333;
+  padding: 5px;
+  margin: 20px;
+}
+.menu a {
+  color: white;
+  padding: 10px;
+  display: inline-block;
+  font-size: 30px;
+}
+/* Estilos para telas menores que 768px */
+@media screen and (max-width: 768px) {
+  body {
+    background-color: lightgray;
+  }
+}
+button {
+  font-size: 20px;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  margin: auto;
+  margin-top: 10px;
+  box-shadow: 0 0 20px blue;
+  transition: transform 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  img {
+    max-width: 300px;
+  }
+
+  button {
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  img {
+    max-width: 200px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+}
