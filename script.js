@@ -1,4 +1,4 @@
-const imagens = ["./img/Virus.png", "./img/fundo1.jpg", "./img/fundo2.jpg"]
+const imagens = []
 let indice = 0
 
 const imagem = document.querySelector(".container img")
