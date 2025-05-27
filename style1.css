@@ -48,6 +48,7 @@ main {
   font-size: 0.95em;
 }
 
+
 .preco {
   color: #009688;
   font-weight: bold;
@@ -68,11 +69,33 @@ main {
   font-size: 20px;
   text-decoration: none;
 }
+.carrinho {
+  margin-top: 10px;
+  background-color: #009688;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+.carrinho:hover {
+  background-color: #00796b;
+}
+
+#carrinho-icon {
+  float: right;
+  font-weight: bold;
+  color: yellow;
+}
 footer {
   position: absolute;
   bottom: 100;
   left: 0;
   width: 100%;
+  display: flex;
   background-color: #333;
   justify-content: center;
   gap: 30px;
@@ -92,6 +115,19 @@ footer img {
 
 footer img:hover {
   transform: scale(1.1);
+}
+
+@media (max-width: 640px) {
+  h1 {
+    font-size: 25px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+  .menu a{
+    font-size: 15px;
+  }
 }
 @media (max-width: 1007px) and (min-width: 641px) {
   .produto img {
